@@ -1,0 +1,21 @@
+{
+  "title": "How do we work ?",
+  "section": [
+    {
+      "title": "1. Select Design",
+      "icon": "ux.svg"
+    },
+    {
+      "title": "2. Order",
+      "icon": "cart2.svg"
+    },
+    {
+      "title": "3. Receive",
+      "icon": "truck.svg"
+    },
+    {
+      "title": "4. Installation in 48 hrs",
+      "icon": "hand-shake.svg"
+    }
+  ]
+}
