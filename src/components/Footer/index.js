@@ -14,7 +14,7 @@ const Footer = () => {
   const [email, setEmail] = useState("");
   useEffect(() => {
     axios
-      .get("https://myindianthings-backend.herokuapp.com/categories")
+      .get("/categories")
       .then((response) => {
         console.log(response.data);
         setCategories(response.data);
@@ -40,7 +40,7 @@ const Footer = () => {
   const submitEmail = () => {
     console.log(email);
     axios
-      .post("https://myindianthings-backend.herokuapp.com/mail", {
+      .post("/mail", {
         email: email,
       })
       .then((response) => {
@@ -83,9 +83,9 @@ const Footer = () => {
             <Row type="flex" justify="space-between">
               <Col lg={10} md={10} sm={12} xs={24}>
                 <S.Language>Contact</S.Language>
-                <S.Large to="tel:9723708470">Call : 9723708470</S.Large>
-                <S.Large to="mailto:myindianthingss@gmail.com">
-                  Mail : myindianthingss@gmail.com
+                <S.Large to="tel:8130083852">Call : 8130083852</S.Large>
+                <S.Large to="mailto:codeclan0100@gmail.com">
+                  Mail : codeclan0100@gmail.com
                 </S.Large>
                 <S.Para>
                   Having trouble in anything ? Feel free href reach out.
@@ -114,8 +114,8 @@ const Footer = () => {
               <Col lg={10} md={10} sm={12} xs={24}>
                 <S.Empty />
                 <S.Language>ADDRESS</S.Language>
-                <S.Para>No 64, Kanakapura road</S.Para>
-                <S.Para>Bangalore 560082</S.Para>
+                <S.Para>197, sector 12 Vasundhara</S.Para>
+                <S.Para>Ghaziabad, UP, 201012</S.Para>
                 <S.Para>India</S.Para>
               </Col>
 

@@ -63,12 +63,9 @@ const Checkout = () => {
     }
 
     // creating a new order
-    const result = await axios.post(
-      "https://myindianthings-backend.herokuapp.com/payment/orders",
-      {
-        amount: price,
-      }
-    );
+    const result = await axios.post("/payment/orders", {
+      amount: price,
+    });
 
     if (!result) {
       alert("Server error. Are you online?");
@@ -82,8 +79,8 @@ const Checkout = () => {
       key: "rzp_test_wWXoxoQf1kjrSm", // Enter the Key ID generated from the Dashboard
       amount: amount * 100,
       currency: currency,
-      name: "MyIndianThings",
-      description: "Payment for your order at MyIndianThings",
+      name: "Code Clan",
+      description: "Payment for your order at Code Clan E-commerce store",
       order_id: order_id,
       handler: async function (response) {
         const data = {
@@ -94,10 +91,7 @@ const Checkout = () => {
           razorpaySignature: response.razorpay_signature,
         };
 
-        const result = await axios.post(
-          "https://myindianthings-backend.herokuapp.com/payment/success",
-          data
-        );
+        const result = await axios.post("/payment/success", data);
 
         message
           .success(result.data.msg)
@@ -169,7 +163,7 @@ const Checkout = () => {
       };
 
       axios
-        .post("https://myindianthings-backend.herokuapp.com/orders", data)
+        .post("/orders", data)
         .then((response) => {
           console.log(response.data);
           localStorage.removeItem("products");

@@ -19,10 +19,10 @@ const About = () => {
           wallpaper to transform your house into a dream home. Whether you’re
           restoring a Vintage with antiqued wallpaper or choosing dynamic
           designs and colors for the modern generation, you’ll love the quality,
-          affordability and superior style offered by My Indian Things. Through
-          a dedicated learned team of experienced design consultants, My Indian
-          Things helps homeowners and professional decorators achieve their home
-          or office design looks.
+          affordability and superior style offered by Code Clan E-commerce.
+          Through a dedicated learned team of experienced design consultants,
+          Code Clan E-commerce helps homeowners and professional decorators
+          achieve their home or office design looks.
           <br />
           <br />
           When you need the best wall cover expert, we have you covered. Over

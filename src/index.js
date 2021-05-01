@@ -6,6 +6,9 @@ import "antd/dist/antd.css";
 import Router from "./router";
 import i18n from "./translation";
 import * as serviceWorker from "./serviceWorker";
+import axios from "axios";
+
+axios.defaults.baseURL = "https://codeclan-ecommerce-backend.herokuapp.com";
 
 const App = () => (
   <BrowserRouter>

@@ -10,16 +10,14 @@ const Category = (props) => {
 
   useEffect(() => {
     axios
-      .get(`https://myindianthings-backend.herokuapp.com/categories/${id}`)
+      .get(`/categories/${id}`)
       .then((response) => {
         setCategory(response.data);
       })
       .catch((error) => console.log(error));
 
     axios
-      .get(
-        `https://myindianthings-backend.herokuapp.com/products?category=${id}`
-      )
+      .get(`/products?category=${id}`)
       .then((response) => {
         console.log(response.data);
         setProducts(response.data);
